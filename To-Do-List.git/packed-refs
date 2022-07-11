@@ -1,6 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-0bbcf40b67aabb4d392cfc904bac5dbfd92d6803 refs/heads/add_remove_feature
-f264adc5a323dd0914d1c597a3db92c32067413c refs/heads/draggable-elements
-d89fdea28ea491a9c106c5ee4d2f9fd87b093156 refs/heads/interactive-list
-f1c3b8924d122e14175ee249b928d8b1c297d976 refs/heads/list-structure
-784d6167054c87b0d96eafc36843305844a0bb8c refs/heads/master
