@@ -1,0 +1,257 @@
+body {
+  background-color: gainsboro;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+ul > h2 {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding-left: 10px;
+}
+
+ul > * {
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60vw;
+  list-style-type: none;
+  box-shadow: 5px 5px 5px 5px;
+  background: #fff;
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+}
+
+input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+input::-moz-placeholder {
+  font-style: italic;
+}
+
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+}
+
+.task {
+  flex-grow: 1;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+h2::after {
+  content : '\1F5D8'
+}
+
+#addItem {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.addItem {
+  display: flex;
+}
+
+.addItem::after {
+  content:' \23CE';
+  font-size: 20px;
+}
+
+.lItem {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:disabled {
+  outline: none;
+  border: none;
+}
+
+#clrCompleted {
+  order: 1300;
+  text-align: center;
+  line-height: 1.5;
+  background-color: gainsboro;
+  width: 100%;
+  border-bottom: none;
+}
+
+.editIcon::after {
+  content: '\2807';
+  font-size: 20px;
+}
+
+.icnCont {
+  width: 50px;
+}
+
+.editIcon {
+  margin-left: 20px;
+  width: 50px;
+}
+
+.editIcon:hover {
+  cursor: all-scroll;
+}
+
+.trashCont {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  background: #ff6873;
+  width: 16px;
+  height: 18px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.trash::after {
+  content: '';
+  position: absolute;
+  left: -99px;
+  right: 0;
+  bottom: -50px;
+  width: 300px;
+}
+
+.trash span {
+  position: absolute;
+  height: 3px;
+  background: #ff6873;
+  top: -4px;
+  left: -2px;
+  right: -2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotate(0deg);
+  transition: transform 250ms;
+  transform-origin: 19% 100%;
+}
+
+.trash span::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  background: #ff6873;
+  top: -2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotate(0deg);
+  transition: transform 250ms;
+  transform-origin: 19% 100%;
+  left: 6px;
+}
+
+.trash i {
+  position: relative;
+  top: -8px;
+  width: 2px;
+  height: 8px;
+  background: #fff;
+  display: block;
+  margin: 14px auto;
+  border-radius: 5px;
+}
+
+.trash i::after {
+  content: '';
+  width: 2px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  left: -4px;
+  border-radius: 5px;
+}
+
+.trash i::before {
+  content: '';
+  width: 2px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  right: -4px;
+  border-radius: 5px;
+}
+
+.trash:hover span {
+  transform: rotate(-45deg);
+  transition: transform 250ms;
+}
+
+.hide {
+  visibility: hidden;
+  display: none !important;
+}
+
+input[type="checkbox"]:checked + input {
+  text-decoration: line-through;
+  font-style: italic;
+  background-color: rgb(151, 228, 151);
+  color: rgb(53, 51, 51);
+}
+
+input[type="checkbox"]:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"]:checked::after {
+  content : '\2713';
+  font-size: 24px;
+  color: green;
+}
+/* dragable input*/
+
+.draggable {
+  background-color: white;
+  cursor: move;
+}
+
+.draggable.dragging {
+  border: 1px solid black;
+  opacity: .5;
+}
