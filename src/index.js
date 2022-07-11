@@ -9,17 +9,6 @@ let tasks = [
 ]
 
 function addTaskToPage(task) {
-  /*<li class="lItem"><input type="checkbox"><input class="task" type="text" disabled value="testggggggggggggggggggggggggggggg gggggggggggggggggggggggggggg">
-        <div class="icnCont">
-          <a2 class="editIcon hide"></a2>
-          <a1 class="trashCont">
-            <span2 class="trash">
-              <span1></span1>
-              <i></i>
-            </span2>
-          </a1>
-        </div>
-      </li>*/
   const iTag = document.createElement('i');
   const span1 = document.createElement('span');
   const span2 = document.createElement('span');
@@ -52,18 +41,15 @@ function addTaskToPage(task) {
   const litem = document.createElement('li');
   litem.className = "lItem draggable";
   litem.append(chckbx, desc, icnCont);
-  // litem.onfocusout = disableEdit;
-  // litem.onfocus = gotFocus;
-  // litem.onblur = editTask;
   const ulist = document.querySelector('.dragContainer');
   ulist.appendChild(litem);
 }
 
-function preventDef(e) {
+const preventDef = (e) => {
   e.preventDefault();
 }
 
-function updateList(tasks) {
+const updateList = (tasks) => {
   for (let task of tasks) {
     addTaskToPage(task);
   }
