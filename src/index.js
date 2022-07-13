@@ -1,8 +1,9 @@
 //import _ from 'lodash';
-import './style.css';
+//import './style.css';
 import { enableEdit, editTask, addTask, removeTask } from './pageFunc.js';
 import { updateStatus, clearAllCompleted } from './status.js';
 import activateDrag from './drag.js';
+
 
 
 let tasks = [
