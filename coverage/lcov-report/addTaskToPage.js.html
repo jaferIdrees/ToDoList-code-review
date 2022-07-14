@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.96% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>26/26</span>
+                <span class='fraction'>32/33</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>26/26</span>
+                <span class='fraction'>32/32</span>
             </div>
         
             
@@ -101,7 +101,31 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
@@ -112,71 +136,50 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { enableEdit, editTask,  removeTask } from './pageFunc.js';
+import { updateStatus} from './status.js';
 &nbsp;
 export function addTaskToPage(task) {
   const iTag = document.createElement('i');
   const span1 = document.createElement('span');
   const span2 = document.createElement('span');
+  const a1 = document.createElement('a');
+  const chckbx = document.createElement('input');
+  const desc = document.createElement('input');
+  const a2 = document.createElement('a');
+  const icnCont = document.createElement('div');
+  const litem = document.createElement('li');
+&nbsp;
   span2.className = 'trash';
   span2.append(span1, iTag);
-  const a1 = document.createElement('a');
   a1.className = 'trashCont hide';
   a1.appendChild(span2);
-  //a1.onmousedown = preventDef;
-  //a1.onclick = removeTask;
-  const a2 = document.createElement('a');
+  a1.onmousedown = (<span class="fstat-no" title="function not covered" >(e</span>)=&gt;  <span class="cstat-no" title="statement not covered" >e.preventDefault())</span>;
+  a1.onclick = removeTask;
   a2.className = 'editIcon';
-  //a2.onclick = enableEdit;
-  const icnCont = document.createElement('div');
+  a2.onclick = enableEdit;
   icnCont.className = 'icnCont';
   icnCont.append(a1, a2);
 &nbsp;
 &nbsp;
-  const chckbx = document.createElement('input');
-  const desc = document.createElement('input');
   desc.id = task.index;
   desc.value = task.description;
   desc.className = 'task';
   desc.disabled = true;
-  /* desc.onchange = editTask;
-  desc.onblur = editTask; */
+  desc.onchange = editTask;
+  desc.onblur = editTask;
   chckbx.type = 'checkbox';
   chckbx.checked = task.completed;
-  //chckbx.onchange = updateStatus;
-  const litem = document.createElement('li');
+  chckbx.onchange = updateStatus;
   litem.className = "lItem draggable";
   litem.append(chckbx, desc, icnCont);
   const ulist = document.querySelector('.dragContainer');
   ulist.appendChild(litem);
-  //return document;
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -184,7 +187,7 @@ export function addTaskToPage(task) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-07-14T04:33:33.885Z
+                at 2022-07-14T17:31:28.057Z
             </div>
         <script src="prettify.js"></script>
         <script>
