@@ -1,4 +1,5 @@
-
+import { enableEdit, editTask,  removeTask } from './pageFunc.js';
+import { updateStatus} from './status.js';
 
 export function addTaskToPage(task) {
   const iTag = document.createElement('i');
@@ -15,10 +16,10 @@ export function addTaskToPage(task) {
   span2.append(span1, iTag);
   a1.className = 'trashCont hide';
   a1.appendChild(span2);
-  //a1.onmousedown = preventDef;
-  //a1.onclick = removeTask;
+  a1.onmousedown = ((e)=>  e.preventDefault());
+  a1.onclick = removeTask;
   a2.className = 'editIcon';
-  //a2.onclick = enableEdit;
+  a2.onclick = enableEdit;
   icnCont.className = 'icnCont';
   icnCont.append(a1, a2);
 
@@ -27,14 +28,13 @@ export function addTaskToPage(task) {
   desc.value = task.description;
   desc.className = 'task';
   desc.disabled = true;
-  /* desc.onchange = editTask;
-  desc.onblur = editTask; */
+  desc.onchange = editTask;
+  desc.onblur = editTask;
   chckbx.type = 'checkbox';
   chckbx.checked = task.completed;
-  //chckbx.onchange = updateStatus;
+  chckbx.onchange = updateStatus;
   litem.className = "lItem draggable";
   litem.append(chckbx, desc, icnCont);
   const ulist = document.querySelector('.dragContainer');
   ulist.appendChild(litem);
-  //return document;
 }
