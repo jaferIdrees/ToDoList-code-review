@@ -1,7 +1,7 @@
 //import _ from 'lodash';
-//import './style.css';
-import { addTask,  } from './pageFunc.js';
-import {  clearAllCompleted } from './status.js';
+import './style.css';
+import { addTask, } from './pageFunc.js';
+import { clearAllCompleted } from './status.js';
 import { addTaskToPage } from './addTaskToPage.js';
 import activateDrag from './drag.js';
 

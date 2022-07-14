@@ -36,5 +36,5 @@ export function removeTask(){
   tasks.splice(index, 1);
   for (let i = 0; i < tasks.length; i++) tasks[i].index = i;
   updateLocalStorage(tasks);
-  document.location.reload();
+  this.parentElement.parentElement.remove();
 }

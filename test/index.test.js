@@ -31,7 +31,7 @@ describe('Test Add functionality', () => {
 
 describe('Test Remove functionality', () => {
   test('Remove one new item to the list', () => {
-    document.getElementById('0').parentElement.querySelector('trashCont').click()
+    document.getElementById('0').parentElement.querySelector('.trashCont').click()
     const list = document.querySelectorAll('.lItem');
     expect(list).toHaveLength(4);
   });
