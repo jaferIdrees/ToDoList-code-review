@@ -18,6 +18,7 @@ export function addTaskToPage(task) {
   a1.appendChild(span2);
   a1.onmousedown = ((e)=>  e.preventDefault());
   a1.onclick = removeTask;
+  chckbx.classList.add('chckbx');
   a2.className = 'editIcon';
   a2.onclick = enableEdit;
   icnCont.className = 'icnCont';

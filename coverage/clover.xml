@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657821175563" clover="3.2.0">
-  <project timestamp="1657821175563" name="All files">
-    <metrics statements="71" coveredstatements="49" conditionals="1" coveredconditionals="1" methods="11" coveredmethods="5" elements="83" coveredelements="55" complexity="0" loc="71" ncloc="71" packages="1" files="4" classes="4"/>
+<coverage generated="1657832894828" clover="3.2.0">
+  <project timestamp="1657832894829" name="All files">
+    <metrics statements="77" coveredstatements="73" conditionals="1" coveredconditionals="1" methods="12" coveredmethods="10" elements="90" coveredelements="84" complexity="0" loc="77" ncloc="77" packages="1" files="4" classes="4"/>
     <file name="Task.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/Task.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="3" count="10" type="stmt"/>
@@ -9,81 +9,87 @@
       <line num="5" count="10" type="stmt"/>
     </file>
     <file name="addTaskToPage.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/addTaskToPage.js">
-      <metrics statements="32" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <line num="5" count="5" type="stmt"/>
-      <line num="6" count="5" type="stmt"/>
-      <line num="7" count="5" type="stmt"/>
-      <line num="8" count="5" type="stmt"/>
-      <line num="9" count="5" type="stmt"/>
-      <line num="10" count="5" type="stmt"/>
-      <line num="11" count="5" type="stmt"/>
-      <line num="12" count="5" type="stmt"/>
-      <line num="13" count="5" type="stmt"/>
-      <line num="15" count="5" type="stmt"/>
-      <line num="16" count="5" type="stmt"/>
-      <line num="17" count="5" type="stmt"/>
-      <line num="18" count="5" type="stmt"/>
-      <line num="19" count="5" type="stmt"/>
-      <line num="20" count="5" type="stmt"/>
-      <line num="21" count="5" type="stmt"/>
-      <line num="22" count="5" type="stmt"/>
-      <line num="23" count="5" type="stmt"/>
-      <line num="24" count="5" type="stmt"/>
-      <line num="27" count="5" type="stmt"/>
-      <line num="28" count="5" type="stmt"/>
-      <line num="29" count="5" type="stmt"/>
-      <line num="30" count="5" type="stmt"/>
+      <metrics statements="33" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="6" count="8" type="stmt"/>
+      <line num="7" count="8" type="stmt"/>
+      <line num="8" count="8" type="stmt"/>
+      <line num="9" count="8" type="stmt"/>
+      <line num="10" count="8" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="18" count="8" type="stmt"/>
+      <line num="19" count="8" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="stmt"/>
+      <line num="22" count="8" type="stmt"/>
+      <line num="23" count="8" type="stmt"/>
+      <line num="24" count="8" type="stmt"/>
+      <line num="25" count="8" type="stmt"/>
+      <line num="28" count="8" type="stmt"/>
+      <line num="29" count="8" type="stmt"/>
+      <line num="30" count="8" type="stmt"/>
+      <line num="31" count="8" type="stmt"/>
+      <line num="32" count="8" type="stmt"/>
+      <line num="33" count="8" type="stmt"/>
+      <line num="34" count="8" type="stmt"/>
+      <line num="35" count="8" type="stmt"/>
+      <line num="36" count="8" type="stmt"/>
+      <line num="37" count="8" type="stmt"/>
+      <line num="38" count="8" type="stmt"/>
+      <line num="39" count="8" type="stmt"/>
+      <line num="40" count="8" type="stmt"/>
+    </file>
+    <file name="pageFunc.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/pageFunc.js">
+      <metrics statements="28" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
       <line num="31" count="5" type="stmt"/>
       <line num="32" count="5" type="stmt"/>
       <line num="33" count="5" type="stmt"/>
       <line num="34" count="5" type="stmt"/>
-      <line num="35" count="5" type="stmt"/>
-      <line num="36" count="5" type="stmt"/>
-      <line num="37" count="5" type="stmt"/>
-      <line num="38" count="5" type="stmt"/>
-      <line num="39" count="5" type="stmt"/>
-    </file>
-    <file name="pageFunc.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/pageFunc.js">
-      <metrics statements="24" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="11" count="0" type="stmt"/>
-      <line num="12" count="0" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
-      <line num="14" count="0" type="stmt"/>
-      <line num="15" count="0" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="18" count="0" type="stmt"/>
-      <line num="22" count="5" type="stmt"/>
-      <line num="23" count="5" type="stmt"/>
-      <line num="24" count="5" type="stmt"/>
-      <line num="25" count="5" type="stmt"/>
-      <line num="29" count="6" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
-      <line num="37" count="4" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <line num="38" count="9" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="4" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
     </file>
     <file name="status.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/status.js">
-      <metrics statements="12" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
       <line num="12" count="1" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
-      <line num="14" count="0" type="stmt"/>
-      <line num="15" count="0" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="19" count="0" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="4" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
