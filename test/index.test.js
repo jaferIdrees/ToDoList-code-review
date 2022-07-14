@@ -6,10 +6,9 @@ import { addTaskToPage } from '../src/addTaskToPage.js';
 
 test('Add one new item to the list', () => {
   document.body.innerHTML =
-    '<ul>' +
     '<div class="dragContainer">' +
-    '</div>' +
-    '</ul>';
+    '</div>'
+
   for (let i = 0; i < 5; i++) {
     const newTask = {
       description: 'desc',
