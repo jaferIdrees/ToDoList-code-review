@@ -5,6 +5,7 @@
 import { addTaskToPage } from '../src/addTaskToPage.js';
 import { addTask } from '../src/pageFunc';
 import Task from '../src/Task.js';
+import {clearAllCompleted} from '../src/status.js';
 
 // eslint-disable-next-line no-undef
 describe('Test Add functionality', () => {
@@ -12,6 +13,7 @@ describe('Test Add functionality', () => {
   test('Add one new item to the list', () => {
     document.body.innerHTML =
       '<ul>' +
+      '<li id="clrCompleted"><a href="#">Clear all completed</a></li>'+
       '<div class="dragContainer">' +
       '</div>' +
       '</ul>';
@@ -57,5 +59,14 @@ describe('Test check functionality', () => {
     const tasks = JSON.parse(localStorage.getItem('ToDoTasks'));
     console.log("This ",tasks[0].completed,tasks[1].completed,tasks[2].completed,tasks[3].completed)
     expect(tasks[1].completed).toBe(true);
+  })
+})
+
+describe('Test clearAllCompleted tasks functionality', () => {
+  test('Test clearAllCompleted tasks functionality', () => {
+    clearAllCompleted();
+    //document.getElementById('clrCompleted').click();
+    const list = document.querySelectorAll('.lItem');
+    expect(list).toHaveLength(3);
   })
 })

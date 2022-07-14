@@ -1,14 +1,23 @@
 import Task from './Task.js'
+import { addTaskToPage } from './addTaskToPage.js';
 
-export function enableEdit(){
+export const updateList = (tasks) => {
+  const ulist = document.querySelector('.dragContainer');
+  ulist.replaceChildren('');
+  for (let task of tasks) {
+    addTaskToPage(task);
+  }
+}
+
+export function enableEdit() {
   this.parentNode.parentNode.querySelector('.task').disabled = false;
   this.parentNode.parentNode.querySelector('.task').focus();
   this.classList.add('hide');
   this.parentNode.querySelector('.trashCont').classList.remove('hide');
 }
 
-export function editTask(){
-  const index = parseInt(this.parentNode.querySelector('.task').id,10);
+export function editTask() {
+  const index = parseInt(this.parentNode.querySelector('.task').id, 10);
   this.disabled = true;
   this.parentNode.querySelector('.icnCont').querySelector('.trashCont').classList.add('hide');
   this.parentNode.querySelector('.icnCont').querySelector('.editIcon').classList.remove('hide');
@@ -18,23 +27,23 @@ export function editTask(){
   updateLocalStorage(tasks);
 }
 
-export function addTask(tasks,desc){
+export function addTask(tasks, desc) {
   const newTask = new Task(desc, tasks.length);
   tasks.push(newTask);
   updateLocalStorage(tasks);
   return newTask;
 }
 
-export function updateLocalStorage(tasks){
-  localStorage.setItem('ToDoTasks',JSON.stringify(tasks));
+export function updateLocalStorage(tasks) {
+  localStorage.setItem('ToDoTasks', JSON.stringify(tasks));
 }
 
-export function removeTask(){
+export function removeTask() {
   const tasks = JSON.parse(localStorage.getItem('ToDoTasks'));
-  console.log(this.parentNode.parentNode.querySelector('.task').id)
   const index = parseInt(this.parentNode.parentNode.querySelector('.task').id);
   this.parentElement.parentElement.remove();
   tasks.splice(index, 1);
   for (let i = 0; i < tasks.length; i++) tasks[i].index = i;
   updateLocalStorage(tasks);
 }
+
