@@ -34,6 +34,6 @@ export function addTaskToPage(task) {
   litem.className = "lItem draggable";
   litem.append(chckbx, desc, icnCont);
   const ulist = document.querySelector('.dragContainer');
-  console.log('hello');
   ulist.appendChild(litem);
+  //return document;
 }
