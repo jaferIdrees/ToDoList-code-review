@@ -6,7 +6,9 @@ import { addTaskToPage } from '../src/addTaskToPage.js';
 import { addTask } from '../src/pageFunc';
 import Task from '../src/Task.js';
 
+// eslint-disable-next-line no-undef
 describe('Test Add functionality', () => {
+  // eslint-disable-next-line no-undef
   test('Add one new item to the list', () => {
     document.body.innerHTML =
       '<ul>' +
@@ -24,16 +26,27 @@ describe('Test Add functionality', () => {
 
     const list = document.querySelectorAll('.lItem');
 
-    //expect(addTaskToPage).toBeCalledTimes(1);
+    // eslint-disable-next-line no-undef
     expect(list).toHaveLength(5);
   });
 })
 
+// eslint-disable-next-line no-undef
 describe('Test Remove functionality', () => {
+  // eslint-disable-next-line no-undef
   test('Remove one new item to the list', () => {
     document.getElementById('0').parentElement.querySelector('.trashCont').click()
     const list = document.querySelectorAll('.lItem');
+    // eslint-disable-next-line no-undef
     expect(list).toHaveLength(4);
-    //test push
   });
+})
+
+describe('Test edit description functionality', () => {
+  test('Test edit description functionality', () => {
+    document.getElementById('1').parentElement.querySelector('.task').value= 'Test Edit Description';
+    document.getElementById('1').parentElement.querySelector('.task').dispatchEvent(new Event('change'));
+    const tasks = JSON.parse(localStorage.getItem('ToDoTasks'));
+    expect(tasks[1].description).toBe('Test Edit Description');
+  })
 })

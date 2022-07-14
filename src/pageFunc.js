@@ -31,10 +31,11 @@ export function updateLocalStorage(tasks){
 
 export function removeTask(){
   const tasks = JSON.parse(localStorage.getItem('ToDoTasks'));
+  console.log(this.parentNode.parentNode.querySelector('.task').id)
   const index = parseInt(this.parentNode.parentNode.querySelector('.task').id);
-  console.log(`removeFun ${index}`)
+  this.parentElement.parentElement.remove();
   tasks.splice(index, 1);
   for (let i = 0; i < tasks.length; i++) tasks[i].index = i;
   updateLocalStorage(tasks);
-  this.parentElement.parentElement.remove();
+  
 }
