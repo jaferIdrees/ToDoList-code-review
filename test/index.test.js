@@ -34,5 +34,6 @@ describe('Test Remove functionality', () => {
     document.getElementById('0').parentElement.querySelector('.trashCont').click()
     const list = document.querySelectorAll('.lItem');
     expect(list).toHaveLength(4);
+    //test push
   });
 })

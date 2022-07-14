@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657819888077" clover="3.2.0">
-  <project timestamp="1657819888077" name="All files">
+<coverage generated="1657821175563" clover="3.2.0">
+  <project timestamp="1657821175563" name="All files">
     <metrics statements="71" coveredstatements="49" conditionals="1" coveredconditionals="1" methods="11" coveredmethods="5" elements="83" coveredelements="55" complexity="0" loc="71" ncloc="71" packages="1" files="4" classes="4"/>
     <file name="Task.js" path="/home/jafer/microverse_projects/module2/ToDoList-code-review/src/Task.js">
       <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
