@@ -50,3 +50,12 @@ describe('Test edit description functionality', () => {
     expect(tasks[1].description).toBe('Test Edit Description');
   })
 })
+
+describe('Test check functionality', () => {
+  test('Test check is changed when clicked', () => {
+    document.getElementById('1').parentElement.querySelector('.chckbx').click();
+    const tasks = JSON.parse(localStorage.getItem('ToDoTasks'));
+    console.log("This ",tasks[0].completed,tasks[1].completed,tasks[2].completed,tasks[3].completed)
+    expect(tasks[1].completed).toBe(true);
+  })
+})
